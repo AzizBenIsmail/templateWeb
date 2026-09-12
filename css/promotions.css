@@ -1,0 +1,119 @@
+.promotion-section {
+  background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+  color: var(--paper);
+  padding: 80px 0;
+}
+
+.promotion-grid {
+  display: grid;
+  grid-template-columns: minmax(440px, 1fr) minmax(420px, 0.9fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.promotion-content {
+  padding: 20px 0;
+}
+
+.promotion-content h2 {
+  margin: 16px 0 20px;
+  font-size: clamp(2.8rem, 3vw, 3.4rem);
+  line-height: 1.25;
+  color: var(--paper);
+}
+
+.promotion-content p {
+  color: var(--muted-2);
+  font-size: 1.04rem;
+  max-width: 520px;
+}
+
+.promotion-metrics {
+  display: flex;
+  gap: 40px;
+  margin: 30px 0 28px;
+}
+
+.metric-number {
+  color: var(--accent-soft);
+  font-size: 2rem;
+  font-weight: 800;
+  display: block;
+}
+
+.metric-label {
+  color: var(--muted-2);
+  font-size: 0.78rem;
+}
+
+.promotion-products {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr);
+  gap: 18px;
+}
+
+.promo-card {
+  background: var(--paper);
+  color: var(--text);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 16px 40px var(--shadow);
+  position: relative;
+}
+
+.small-card {
+  max-width: 340px;
+}
+
+.promo-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--primary);
+  color: var(--paper);
+  border-radius: 50px;
+  padding: 8px 14px;
+  font-size: 0.76rem;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.promo-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.promo-details {
+  padding: 22px;
+}
+
+.promo-category {
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.promo-details h3 {
+  margin: 12px 0 16px;
+  color: var(--heading);
+}
+
+.promo-price {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.old-price {
+  color: var(--text-light);
+  font-size: 0.92rem;
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: var(--secondary);
+  font-size: 1.44rem;
+  font-weight: 900;
+}

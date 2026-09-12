@@ -1,0 +1,211 @@
+.hero-section {
+  background: radial-gradient(circle at right top, rgba(214, 47, 31, 0.08), transparent 30%), var(--paper);
+  padding: 56px 0 42px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(500px, 1fr) minmax(420px, 0.9fr);
+  align-items: center;
+  gap: 42px;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+
+.eyebrow span {
+  width: 54px;
+  height: 2px;
+  background: var(--primary);
+}
+
+.hero-content h1 {
+  margin: 16px 0 16px;
+  color: var(--heading);
+  font-size: clamp(3rem, 4vw, 4.8rem);
+  line-height: 1.12;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-soft);
+  max-width: 560px;
+}
+
+.hero-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 8px;
+  box-shadow: 0 16px 30px var(--shadow);
+  max-width: 640px;
+  margin-top: 28px;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.search-input-wrap input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--text-light);
+}
+
+.hero-search-button {
+  min-width: 140px;
+  padding: 12px 26px;
+}
+
+.hero-vehicle-search {
+  margin-top: 18px;
+  background: var(--secondary);
+  border-radius: var(--radius);
+  padding: 18px;
+  color: var(--paper);
+}
+
+.vehicle-select-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(110px, 1fr));
+  gap: 14px;
+}
+
+.select-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.select-field label {
+  color: var(--accent-soft);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.select-field select {
+  height: 44px;
+  background: var(--paper);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+}
+
+.hero-proof {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-top: 28px;
+}
+
+.hero-proof-number {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--heading);
+  display: block;
+}
+
+.hero-proof-label {
+  font-size: 0.78rem;
+  color: var(--text-soft);
+  display: block;
+}
+
+.hero-media {
+  position: relative;
+}
+
+.hero-card {
+  position: relative;
+}
+
+.hero-image-wrap {
+  position: relative;
+  min-height: 520px;
+  border-radius: 30% 30% 0 30%;
+  background: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+  overflow: hidden;
+  box-shadow: 0 24px 60px var(--shadow);
+  transform: rotate(2deg);
+}
+
+.hero-image-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.45));
+}
+
+.hero-image {
+  height: 560px;
+  object-fit: cover;
+}
+
+.hero-floating-card {
+  position: absolute;
+  background: var(--paper);
+  border-radius: 16px;
+  padding: 16px
+  box-shadow: 0 16px 30px var(--shadow);
+  z-index: 3;
+}
+
+.floating-card-top {
+  left: 22px;
+  top: 26px;
+  transform: rotate(-8deg);
+}
+
+.floating-card-bottom {
+  right: 24px;
+  bottom: 26px;
+  transform: rotate(8deg);
+}
+
+.floating-label {
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.floating-value {
+  display: block;
+  color: var(--secondary);
+  margin-top: 8px;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
